@@ -73,22 +73,20 @@ class Location
         return $this->latitude;
     }
 
-    public function setLatitude(string $latitude): static
-    {
-        $this->latitude = $latitude;
-
-        return $this;
-    }
-
     public function getLongitude(): ?string
     {
         return $this->longitude;
     }
 
-    public function setLongitude(string $longitude): static
+    public function setLatitude(?string $latitude): static
+    {
+        $this->latitude = $latitude;
+        return $this;
+    }
+
+    public function setLongitude(?string $longitude): static
     {
         $this->longitude = $longitude;
-
         return $this;
     }
 

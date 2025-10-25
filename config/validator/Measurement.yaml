@@ -1,0 +1,9 @@
+App\Entity\Measurement:
+    properties:
+        location:
+            - NotNull: { groups: [create, edit] }
+        date:
+            - NotNull: { groups: [create, edit] }
+        celsius:
+            - NotBlank: { groups: ['create', 'edit'], message: 'Temperature cannot be blank.' }
+            - Range: { min: -50, max: 60, groups: ['create', 'edit'] }
