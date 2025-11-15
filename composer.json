@@ -6,6 +6,7 @@
     "require": {
         "php": ">=8.2",
         "ext-ctype": "*",
+        "ext-http": "*",
         "ext-iconv": "*",
         "doctrine/dbal": "^3",
         "doctrine/doctrine-bundle": "^2.18",
@@ -30,6 +31,7 @@
         "symfony/process": "7.3.*",
         "symfony/property-access": "7.3.*",
         "symfony/property-info": "7.3.*",
+        "symfony/rate-limiter": "7.3.*",
         "symfony/runtime": "7.3.*",
         "symfony/security-bundle": "7.3.*",
         "symfony/serializer": "7.3.*",
